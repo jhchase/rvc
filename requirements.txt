@@ -40,4 +40,3 @@ pyworld==0.3.2
 httpx==0.23.0
 torchcrepe==0.0.20
 fastapi==0.88
-omegaconf==2.0.5
