@@ -1755,7 +1755,7 @@ with gr.Blocks(title="RVC WebUI") as app:
                         gpus6 = gr.Textbox(
                             label=i18n("以-分隔输入使用的卡号, 例如   0-1-2   使用卡0和卡1和卡2"),
                             value=0,
-                            interactive=True,
+                            interactive=False,
                         )
                         gpu_info9 = gr.Textbox(label=i18n("显卡信息"), value=gpu_info)
                     with gr.Column():
@@ -1872,7 +1872,7 @@ with gr.Blocks(title="RVC WebUI") as app:
                     gpus16 = gr.Textbox(
                         label=i18n("以-分隔输入使用的卡号, 例如   0-1-2   使用卡0和卡1和卡2"),
                         value=0,
-                        interactive=True,
+                        interactive=False,
                     )
                     but3 = gr.Button(i18n("训练模型"), variant="primary")
                     but4 = gr.Button(i18n("训练特征索引"), variant="primary")
