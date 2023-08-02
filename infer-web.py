@@ -1801,32 +1801,32 @@ with gr.Blocks(title="RVC WebUI") as app:
                 with gr.Row():
                     save_epoch10 = gr.Slider(
                         minimum=0,
-                        maximum=50,
+                        maximum=1000,
                         step=1,
                         label=i18n("保存频率save_every_epoch"),
                         value=25,
                         interactive=True,
                     )
                     total_epoch11 = gr.Slider(
-                        minimum=0,
+                        minimum=1,
                         maximum=10000,
                         step=1,
                         label=i18n("总训练轮数total_epoch"),
-                        value=100,
+                        value=225,
                         interactive=True,
                     )
                     batch_size12 = gr.Slider(
                         minimum=1,
-                        maximum=20,
+                        maximum=28,
                         step=1,
                         label=i18n("每张显卡的batch_size"),
-                        value=20,
+                        value=28,
                         interactive=True,
                     )
                     if_save_latest13 = gr.Radio(
                         label=i18n("是否仅保存最新的ckpt文件以节省硬盘空间"),
                         choices=[i18n("是"), i18n("否")],
-                        value=i18n("否"),
+                        value=i18n("是"),
                         interactive=True,
                     )
                     if_cache_gpu17 = gr.Radio(
