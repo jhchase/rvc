@@ -1876,7 +1876,7 @@ with gr.Blocks(title="RVC WebUI") as app:
                     )
                     but3 = gr.Button(i18n("训练模型"), variant="primary")
                     but4 = gr.Button(i18n("训练特征索引"), variant="primary")
-                    # but5 = gr.Button(i18n("一键训练"), variant="primary")
+                    but5 = gr.Button(i18n("一键训练"), variant="primary")
                     info3 = gr.Textbox(label=i18n("输出信息"), value="", max_lines=10)
                     but3.click(
                         click_train,
@@ -1900,31 +1900,31 @@ with gr.Blocks(title="RVC WebUI") as app:
                         api_name="train_start",
                     )
                     but4.click(train_index, [exp_dir1, version19], info3)
-                    # but5.click(
-                        # train1key,
-                        # [
-                            # exp_dir1,
-                            # sr2,
-                            # if_f0_3,
-                            # trainset_dir4,
-                            # spk_id5,
-                            # np7,
-                            # f0method8,
-                            # save_epoch10,
-                            # total_epoch11,
-                            # batch_size12,
-                            # if_save_latest13,
-                            # pretrained_G14,
-                            # pretrained_D15,
-                            # gpus16,
-                            # if_cache_gpu17,
-                            # if_save_every_weights18,
-                            # version19,
-                            # gpus_rmvpe,
-                        # ],
-                        # info3,
-                        # api_name="train_start_all",
-                    # )
+                    but5.click(
+                        train1key,
+                        [
+                            exp_dir1,
+                            sr2,
+                            if_f0_3,
+                            trainset_dir4,
+                            spk_id5,
+                            np7,
+                            f0method8,
+                            save_epoch10,
+                            total_epoch11,
+                            batch_size12,
+                            if_save_latest13,
+                            pretrained_G14,
+                            pretrained_D15,
+                            gpus16,
+                            if_cache_gpu17,
+                            if_save_every_weights18,
+                            version19,
+                            gpus_rmvpe,
+                        ],
+                        info3,
+                        api_name="train_start_all",
+                    )
 
         with gr.TabItem(i18n("ckpt处理")):
             with gr.Group():
