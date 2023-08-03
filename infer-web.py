@@ -1729,7 +1729,7 @@ with gr.Blocks(title="RVC WebUI") as app:
                 )
                 with gr.Row():
                     trainset_dir4 = gr.Textbox(
-                        label=i18n("输入训练文件夹路径"), value="/kaggle/temp/dataset"
+                        label=i18n("输入训练文件夹路径"), value="/kaggle/working/dataset"
                     )
                     spk_id5 = gr.Slider(
                         minimum=0,
